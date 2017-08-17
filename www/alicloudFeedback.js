@@ -12,5 +12,8 @@ module.exports = {
    */
   open: function (param, successCallback, errorCallback) {
     cordova.exec(successCallback, errorCallback, "AlicloudFeedback", "open", [JSON.stringify(param)]);
+  },
+  fetchUnreadCount: function (successCallback, errorCallback) {
+    cordova.exec(successCallback, errorCallback, "AlicloudFeedback", "fetchUnreadCount", []);
   }
 };

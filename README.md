@@ -24,7 +24,7 @@ ionic cordova plugin add cordova-plugin-cocoapod-support
 ```
 
 ## 使用方法
-
+>打开反馈页面
 ```js
 window.AlicloudFeedback.open({
   // 自定义参数，目前仅ios有用
@@ -34,4 +34,12 @@ window.AlicloudFeedback.open({
   console.error(e);
 });
 
+```
+> 获取未读数量
+```js
+window.AlicloudFeedback.fetchUnreadCount(function(x) {
+  console.log(x);
+}, function(e) {
+  console.error(e);
+});
 ```
