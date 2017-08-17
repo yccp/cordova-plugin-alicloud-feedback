@@ -37,6 +37,8 @@
       <feature name="AlicloudFeedback">
         <param name="android-package" value="news.chen.yu.ionic.AlicloudFeedback"/>
       </feature>
+      <preference name="APP_KEY" value="$APP_KEY" />
+      <preference name="APP_SECRET" value="$APP_SECRET" />
     </config-file>
     <config-file target="AndroidManifest.xml" parent="/manifest">
       <uses-permission android:name="android.permission.INTERNET" />
