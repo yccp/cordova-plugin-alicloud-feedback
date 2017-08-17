@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin 
-  xmlns="http://apache.org/cordova/ns/plugins/1.0" id="alicloud-feedback" version="1.0.0">
+  xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-alicloud-feedback" version="1.0.0">
   <name>AlicloudFeedback</name>
   <description>Cordova Plugin for Alicloud Feedback</description>
   <license>ISC</license>
