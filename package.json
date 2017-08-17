@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-alicloud-feedback",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "AlicloudFeedback for cordova app",
   "main": "index.js",
   "scripts": {
