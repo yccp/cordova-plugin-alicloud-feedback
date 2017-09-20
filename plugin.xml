@@ -5,6 +5,9 @@
   <description>Cordova Plugin for Alicloud Feedback</description>
   <license>ISC</license>
   <keywords>cordova,alicloud,feedback</keywords>
+
+    <dependency id="cordova-plugin-cocoapod-support" version="^1.0.0" />
+
   <js-module src="www/alicloudFeedback.js" name="AlicloudFeedback">
     <clobbers target="AlicloudFeedback" />
   </js-module>
