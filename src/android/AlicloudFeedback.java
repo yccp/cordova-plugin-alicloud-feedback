@@ -28,16 +28,17 @@ public class AlicloudFeedback extends CordovaPlugin {
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
         this.init();
         if (action.equals("open")) {
-            String param = args.getString(0);
-            this.open(param, callbackContext);
-            callbackContext.success();
+            this.open(callbackContext);
+            return true;
+        } else if (action.equals("fetchUnreadCount")) {
+            this.fetchUnreadCount(callbackContext);
             return true;
         }
 
         return false;
     }
 
-    private void open(String param, final CallbackContext callbackContext) {
+    private void open(final CallbackContext callbackContext) {
         try {
             cordova.getThreadPool().execute(new Runnable() {
                 public void run() {
@@ -51,7 +52,7 @@ public class AlicloudFeedback extends CordovaPlugin {
         }
     }
 
-    private void fetchUnreadCount(String param, final CallbackContext callbackContext) {
+    private void fetchUnreadCount(final CallbackContext callbackContext) {
         try {
             FeedbackAPI.getFeedbackUnreadCount(new IUnreadCountCallback() {
                 @Override
