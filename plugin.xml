@@ -58,10 +58,6 @@
     </config-file>
     <framework src="com.android.support:support-v4:+" value="gradle" />
     <framework src="src/android/AlicloudFeedback.gradle" custom="true" type="gradleReference" />
-    <resource-file src="src/android/libs/alicloud-android-feedback-3.1.0.aar" target="libs/alicloud-android-feedback-3.1.0.aar" />
-    <resource-file src="src/android/libs/alicloud-android-monitor-2.5.1.1_for_bc_proguard.jar" target="libs/alicloud-android-monitor-2.5.1.1_for_bc_proguard.jar" />
-    <resource-file src="src/android/libs/alicloud-android-utils-1.0.3.jar" target="libs/alicloud-android-utils-1.0.3.jar" />
-    <resource-file src="src/android/libs/utdid4all-1.1.5.3_proguard.jar" target="libs/utdid4all-1.1.5.3_proguard.jar" />
     <source-file src="src/android/AlicloudFeedback.java" target-dir="src/news/chen/yu/ionic" />
   </platform>
 </plugin>
