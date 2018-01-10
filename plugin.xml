@@ -5,6 +5,9 @@
   <description>Cordova Plugin for Alicloud Feedback</description>
   <license>ISC</license>
   <keywords>cordova,alicloud,feedback</keywords>
+
+    <dependency id="cordova-plugin-cocoapod-support" version="^1.0.0" />
+
   <js-module src="www/alicloudFeedback.js" name="AlicloudFeedback">
     <clobbers target="AlicloudFeedback" />
   </js-module>
@@ -48,20 +51,8 @@
       <uses-permission android:name="android.permission.READ_PHONE_STATE" />
       <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     </config-file>
-    <config-file target="AndroidManifest.xml" parent="/manifest/application">
-      <activity android:name="news.chen.yu.ionic.AlicloudFeedback">
-        <intent-filter>
-          <action android:name="news.chen.yu.ionic.AlicloudFeedback" />
-          <category android:name="android.intent.category.DEFAULT" />
-        </intent-filter>
-      </activity>
-    </config-file>
     <framework src="com.android.support:support-v4:+" value="gradle" />
     <framework src="src/android/AlicloudFeedback.gradle" custom="true" type="gradleReference" />
-    <resource-file src="src/android/libs/alicloud-android-feedback-3.1.0.aar" target="libs/alicloud-android-feedback-3.1.0.aar" />
-    <resource-file src="src/android/libs/alicloud-android-monitor-2.5.1.1_for_bc_proguard.jar" target="libs/alicloud-android-monitor-2.5.1.1_for_bc_proguard.jar" />
-    <resource-file src="src/android/libs/alicloud-android-utils-1.0.3.jar" target="libs/alicloud-android-utils-1.0.3.jar" />
-    <resource-file src="src/android/libs/utdid4all-1.1.5.3_proguard.jar" target="libs/utdid4all-1.1.5.3_proguard.jar" />
     <source-file src="src/android/AlicloudFeedback.java" target-dir="src/news/chen/yu/ionic" />
   </platform>
 </plugin>

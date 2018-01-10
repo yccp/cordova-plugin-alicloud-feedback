@@ -1,12 +1,13 @@
 repositories {
-    flatDir {
-        dirs 'libs'
+    mavenCentral()
+    jcenter()
+    maven {
+        url 'http://maven.aliyun.com/nexus/content/repositories/releases/'
     }
 }
 
 dependencies {
-    compile(name: 'alicloud-android-feedback-3.1.0', ext: 'aar')
-    compile files('libs/alicloud-android-monitor-2.5.1.1_for_bc_proguard.jar')
-    compile files('libs/utdid4all-1.1.5.3_proguard.jar')
-    compile files('libs/alicloud-android-utils-1.0.3.jar')
+    compile 'com.aliyun.ams:alicloud-android-feedback:3.1.1@aar'
+    compile 'com.aliyun.ams:alicloud-android-utdid:1.1.5.3'
+    compile 'com.aliyun.ams:alicloud-android-utils:1.0.3'
 }
