@@ -43,3 +43,10 @@ window.AlicloudFeedback.fetchUnreadCount(function(x) {
   console.error(e);
 });
 ```
+
+## IONIC Wrap
+[https://github.com/yc-ionic/alicloud-feedback](https://github.com/yc-ionic/alicloud-feedback)
+
+## 代码捐献
+
+非常期待您的代码捐献。
